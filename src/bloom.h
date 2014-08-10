@@ -71,7 +71,7 @@ public:
 
     void insert(const std::vector<unsigned char>& vKey);
     void insert(const COutPoint& outpoint);
-    void insert(const uint256& hash);
+    void insert(uint256& hash);
 
     bool contains(const std::vector<unsigned char>& vKey) const;
     bool contains(const COutPoint& outpoint) const;
